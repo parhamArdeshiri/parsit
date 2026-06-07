@@ -3,22 +3,22 @@ from pathlib import Path
 
 class AbstractedBaseParser(ABC):
     @abstractmethod
-    def parse_string(self, data):
+    def parse_string(self, input_data):
         pass
     
-    def parse(self, input_data, output_file):
+    def parse(self, input_data, output):
         if isinstance(input_data, str):
-            output = self.parse_string(input_data)
+            output_data = self.parse_string(input_data)
         
-        elif isinstance(input_data, Path):
+        elif isinstance(input_data, Path):            
             with open(input_data, 'r') as file:
-                output = self.parse_string(file.read())
+                output_data = self.parse_string(file.read())
             
         else:
             raise ValueError("Unsupported data type for parsing")
         
-        with open(output_file, "w") as f:
-            f.write(output)
+        with open(output, "w") as f:
+            f.write(output_data)
             
-        return output
+        return output_data
         

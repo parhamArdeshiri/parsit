@@ -1,0 +1,9 @@
+id,name,age,salary,join_date,department
+101,Alice Johnson,29,55000.50,2023-01-15,Engineering
+102,Bob Smith,,62000.75,2022-07-22,Marketing
+103,Charlie Brown,35,48000.00,2021-11-02,Sales
+104,Diana Prince,42,72500.25,2020-03-10,Engineering
+105,Evan Wright,31,,2024-06-01,HR
+106,Fiona Green,28,51250.00,2023-09-19,Marketing
+107,George White,50,89000.00,2019-12-11,Sales
+108,Hannah Lee,,60500.50,2022-05-05,Engineering
