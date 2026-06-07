@@ -1,1 +1,2 @@
 fire
+python-xml2dict

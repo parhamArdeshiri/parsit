@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company name="TechCorp">
+    <departments>
+        <department id="D01" name="Engineering">
+            <manager>
+                <employeeID>E1001</employeeID>
+                <fullName>Alice Johnson</fullName>
+                <email>alice.johnson@techcorp.com</email>
+            </manager>
+            <employees>
+                <employee>
+                    <employeeID>E1002</employeeID>
+                    <fullName>Bob Smith</fullName>
+                    <position>Senior Software Engineer</position>
+                    <email>bob.smith@techcorp.com</email>
+                    <phone>555-1234</phone>
+                    <hireDate>2018-06-15</hireDate>
+                    <projects>
+                        <project>Project A</project>
+                        <project>Project C</project>
+                    </projects>
+                </employee>
+                <employee>
+                    <employeeID>E1003</employeeID>
+                    <fullName>Carol Davis</fullName>
+                    <position>Frontend Developer</position>
+                    <email>carol.davis@techcorp.com</email>
+                    <phone>555-5678</phone>
+                    <hireDate>2020-03-22</hireDate>
+                    <projects>
+                        <project>Project B</project>
+                    </projects>
+                </employee>
+                <employee>
+                    <employeeID>E1004</employeeID>
+                    <fullName>David Wilson</fullName>
+                    <position>DevOps Engineer</position>
+                    <email>david.wilson@techcorp.com</email>
+                    <phone>555-9012</phone>
+                    <hireDate>2019-11-01</hireDate>
+                    <projects>
+                        <project>Project A</project>
+                        <project>Project D</project>
+                    </projects>
+                </employee>
+            </employees>
+        </department>
+        <department id="D02" name="Sales">
+            <manager>
+                <employeeID>E2001</employeeID>
+                <fullName>Eva Martinez</fullName>
+                <email>eva.martinez@techcorp.com</email>
+            </manager>
+            <employees>
+                <employee>
+                    <employeeID>E2002</employeeID>
+                    <fullName>Frank Lee</fullName>
+                    <position>Account Executive</position>
+                    <email>frank.lee@techcorp.com</email>
+                    <phone>555-3456</phone>
+                    <hireDate>2021-02-10</hireDate>
+                    <salesTarget>500000</salesTarget>
+                </employee>
+                <employee>
+                    <employeeID>E2003</employeeID>
+                    <fullName>Grace Kim</fullName>
+                    <position>Sales Support</position>
+                    <email>grace.kim@techcorp.com</email>
+                    <phone>555-7890</phone>
+                    <hireDate>2022-07-19</hireDate>
+                    <salesTarget>250000</salesTarget>
+                </employee>
+            </employees>
+        </department>
+        <department id="D03" name="Human Resources">
+            <manager>
+                <employeeID>E3001</employeeID>
+                <fullName>Henry Brown</fullName>
+                <email>henry.brown@techcorp.com</email>
+            </manager>
+            <employees>
+                <employee>
+                    <employeeID>E3002</employeeID>
+                    <fullName>Irene Chen</fullName>
+                    <position>HR Generalist</position>
+                    <email>irene.chen@techcorp.com</email>
+                    <phone>555-2345</phone>
+                    <hireDate>2017-08-05</hireDate>
+                </employee>
+            </employees>
+        </department>
+    </departments>
+    <locations>
+        <location city="New York" office="NYC-01" address="123 Tech Ave, Manhattan, NY 10001"/>
+        <location city="San Francisco" office="SFO-02" address="456 Code St, San Francisco, CA 94105"/>
+    </locations>
+    <totalEmployees>6</totalEmployees>
+</company>

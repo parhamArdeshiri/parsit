@@ -1,0 +1,48 @@
+# Application configuration
+app:
+  name: "MyWebApp"
+  version: "2.1.0"
+  environment: "production"
+
+# Server settings
+server:
+  host: "0.0.0.0"
+  port: 8080
+  ssl_enabled: true
+  ssl_cert_path: "/etc/ssl/certs/server.crt"
+
+# Database connection
+database:
+  driver: "postgresql"
+  host: "db.example.com"
+  port: 5432
+  name: "myapp_db"
+  username: "app_user"
+  password: "secure_password_here"
+  pool_size: 10
+  retry_attempts: 3
+
+# Feature flags
+features:
+  - name: "dark_mode"
+    enabled: true
+  - name: "analytics"
+    enabled: false
+  - name: "file_upload"
+    enabled: true
+
+# User roles (list with inline objects)
+roles:
+  - admin
+  - editor
+  - viewer
+
+# Nested structure for endpoints
+api_endpoints:
+  public:
+    - "/login"
+    - "/register"
+  protected:
+    - "/dashboard"
+    - "/profile"
+    - "/settings"
