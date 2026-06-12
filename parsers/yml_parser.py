@@ -5,8 +5,14 @@ import yaml
 import json
 
 class YMLParser(AbstractedBaseParser):
-    def parse_string(self, input_data):
+    def to_json(self, input_data):
         data = StringIO(input_data)
         output = yaml.load(data, Loader=yaml.SafeLoader)
         
-        return json.dumps(output, indent=4)
+        return output
+    
+    def from_json(self, input_data):
+        output = yaml.dump(input_data, default_flow_style=False) 
+
+        return output
+    

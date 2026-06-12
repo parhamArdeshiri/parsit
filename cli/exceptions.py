@@ -1,0 +1,3 @@
+
+class MethodNotFoundException(Exception):
+    pass

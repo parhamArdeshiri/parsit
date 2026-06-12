@@ -1,2 +1,4 @@
 fire
 python-xml2dict
+flatten_json
+json2xml
